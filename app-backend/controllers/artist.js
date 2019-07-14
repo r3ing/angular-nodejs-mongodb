@@ -147,11 +147,11 @@ function uploadImage(req, res) {
             }, (err, artistUpdated) => {
                 if (!artistUpdated) {
                     res.status(404).send({
-                        message: 'No se ha podido actualizar el ususario'
+                        message: 'No se ha podido actualizar el artista'
                     });
                 } else {
                     res.send({
-                        user: artistUpdated
+                        artist: artistUpdated
                     });
                 }
             });
